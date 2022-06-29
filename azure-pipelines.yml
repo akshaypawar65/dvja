@@ -23,8 +23,9 @@ steps:
 
 - task: SnykSecurityScan@1
   inputs:
-    serviceConnectionEndpoint: 'Snykdevscops'
+    serviceConnectionEndpoint: 'Testing'
     testType: 'app'
+    severityThreshold: 'medium'
     monitorWhen: 'always'
     failOnIssues: false
 
